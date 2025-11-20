@@ -13,8 +13,23 @@ https://turtlebot.github.io/turtlebot4-user-manual/tutorials/generate_map.html
 
 Pastikan perangkat (laptop/PC) telah terhubung ke LAN atau WiFi yang sama dengan TurtleBot4, kemudian lakukan SSH ke robot.
 
-## Running Localization & Navigation
+## 1. Running Localization & Navigation
 Di terminal TurtleBot4, jalankan:
 ```bash
 ros2 launch turtlebot4_navigation localization.launch.py map:=path/ke/map.yaml
 ```
+> Pastikan path/ke/map.yaml diganti dengan path file map yang benar.
+
+## 2. Jalankan Nav2 (di robot TurtleBot4)
+Di terminal TurtleBot4 lainnya, jalankan:
+```bash
+ros2 launch turtlebot4_navigation nav2.launch.py
+```
+## 3. Jalankan visualisasi RViz2 (di laptop/PC)
+Pada terminal laptop/PC yang terhubung dengan TurtleBot4, jalankan:
+```bash
+ros2 launch turtlebot4_viz view_navigation.launch.py
+```
+> Pastikan pose robot di RViz sesuai dengan posisi fisik di lapangan.
+
+---
