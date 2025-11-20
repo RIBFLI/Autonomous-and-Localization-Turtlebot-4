@@ -33,3 +33,30 @@ ros2 launch turtlebot4_viz view_navigation.launch.py
 > Pastikan pose robot di RViz sesuai dengan posisi fisik di lapangan.
 
 ---
+
+## Build Package dari Repository Ini
+
+Buat workspace:
+```bash
+mkdir -p ros2_ws/src
+cd ros2_ws/src
+```
+
+Clone repository:
+```bash
+git clone https://github.com/dsyahput/re702_midterm_localization_mapping.git
+```
+
+Build workspace:
+```bash
+cd ../
+colcon build
+source install/setup.bash
+```
+
+Menjalankan program:
+```bash
+ros2 run re702_midterm_localization_mapping navigation
+```
+
+---
