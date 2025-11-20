@@ -44,7 +44,7 @@ cd ros2_ws/src
 
 Clone repository:
 ```bash
-git clone https://github.com/dsyahput/re702_midterm_localization_mapping.git
+git clone https://github.com/RIBFLI/Autonomous-and-Localization-Turtlebot-4.git
 ```
 
 Build workspace:
