@@ -60,3 +60,8 @@ ros2 run re702_midterm_localization_mapping navigation
 ```
 
 ---
+
+##  Demo
+
+Video demonstrasi dapat dilihat di:
+https://youtu.be/0ICtoX1--R0
